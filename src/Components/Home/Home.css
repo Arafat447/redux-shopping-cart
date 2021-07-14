@@ -1,0 +1,18 @@
+.s{
+    margin-left: 7%;
+}
+.r{
+    margin-right: 7%;
+}
+.top-bar {
+    height: 40px;
+
+}
+.card-item {
+    border-radius: 10px;
+    transition: all ease-in 0.2s;
+    margin-bottom: 15px;
+}
+.card-item:hover{
+    box-shadow: 5px 7px 13px -7px rgb(0 0 0 / 83%);
+}
