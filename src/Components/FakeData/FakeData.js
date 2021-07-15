@@ -20,7 +20,7 @@
         title:"Healthy Cotton™ T-Shirt - For Smart Guy",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis saepe magnam quasi tempore consequuntur at ea aspernatur, animi fugit eaque libero id voluptatem mollitia aut doloremque labore voluptas inventore.",
         image:"https://cdn.clothingshoponline.com/Images/Color/19534_f_fm.jpg",
-        price:56,
+        price:76,
         availableSizes:["XXL","XL","L"]
     },
     {
@@ -36,7 +36,7 @@
         title:"Midweight Fleece Shorts - Independent Trading Co. IND20SRT",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis saepe magnam quasi tempore consequuntur at ea aspernatur, animi fugit eaque libero id voluptatem mollitia aut doloremque labore voluptas inventore.",
         image:"https://cdn.clothingshoponline.com/Images/Color/94096_f_fm.jpg",
-        price:56,
+        price:111,
         availableSizes:["XXL","XL","L","M"]
     },
     {
@@ -44,7 +44,7 @@
         title:"Unisex Midweight Tie-Dyed Hooded Sweatshirt - Independent Trading",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis saepe magnam quasi tempore consequuntur at ea aspernatur, animi fugit eaque libero id voluptatem mollitia aut doloremque labore voluptas inventore.",
         image:"https://cdn.clothingshoponline.com/Images/Color/93871_f_fm.jpg",
-        price:56,
+        price:50,
         availableSizes:["XXL","XL","M"]
     },
 ];
