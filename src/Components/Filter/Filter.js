@@ -3,7 +3,7 @@ import React from "react";
 const Filter = (props) => {
     const {filterBySize,products,size,sort,sortByPrice} = props;
   return (
-    <div className="filter-container">
+    <div className="filter-container pt-3 pb-2">
       <div className="d-flex justify-content-between">
         <h6>{products.length} Products</h6>
         <div className="sort">

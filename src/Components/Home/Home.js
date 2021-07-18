@@ -6,15 +6,32 @@ import Products from "../Products/Products";
 import data from "../FakeData/FakeData";
 import Filter from "../Filter/Filter";
 import { useState } from "react";
+import Cart from "../Cart/Cart";
 const Home = () => {
   const [productData, setProductData] = useState({
     products: data,
     sort: "",
     size: "",
   });
+  const [cartItem, setCartItem] = useState([])
 
   const addToCart = (product) =>{
-    console.log(product)
+    let alreadyExists = false;
+    const cartItems = [...cartItem];
+    cartItems.forEach(item=>{
+      if(item._id===product._id){
+        alreadyExists=true;
+        item.count++;
+      }
+    })
+    if(!alreadyExists){
+      cartItems.push({...product,count:1})
+    }
+    setCartItem(cartItems)
+  }
+  const removeItem = (item) => {
+    const cartItems = [...cartItem]
+    setCartItem(cartItems.filter(x => x._id!==item._id))
   }
   const filterBySize = (event) => {
     if (event.target.value === "") {
@@ -57,7 +74,9 @@ const Home = () => {
             ></Filter>
             <Products products={productData.products} addToCart={addToCart} ></Products>
           </div>
-          <div className="col-md-3">cart item</div>
+          <div className="col-md-3">
+             <Cart cartItem={cartItem} removeItem={removeItem} ></Cart>
+          </div>
         </div>
       </div>
     </div>

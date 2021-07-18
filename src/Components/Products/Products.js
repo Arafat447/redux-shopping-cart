@@ -6,11 +6,18 @@ const Products = (props) => {
         <div className="row">
           {props.products.map((pd) => (
             <div className="col-md-4 card-item">
-              <img className="img-fluid" src={pd.image} alt="" />
-              <h6>{pd.title}</h6>
-              <div className="mt-3 d-flex justify-content-between">
-                <p className="price">{pd.price}</p>
-                <button onClick={()=>props.addToCart(pd)} className="btn-primary cart-btn">Add To Cart</button>
+              <div className="card-details">
+                <img className="img-fluid" src={pd.image} alt="" />
+                <h6>{pd.title}</h6>
+                <div className="mt-3 d-flex justify-content-between">
+                  <p className="price"> $ {pd.price}</p>
+                  <button
+                    onClick={() => props.addToCart(pd)}
+                    className="btn-primary btn-grad"
+                  >
+                    Add To Cart
+                  </button>
+                </div>
               </div>
             </div>
           ))}
